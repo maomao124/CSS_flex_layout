@@ -1,0 +1,41 @@
+/*
+  Project name(项目名称)：CSS_flex_layout 
+  File name(文件名): t2
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/19 
+  Time(创建时间)： 20:07
+  Version(版本): 1.0
+  Description(描述)：
+
+ */
+
+#main {
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+.nowrap, .wrap, .wrap_reverse {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.nowrap div, .wrap div, .wrap_reverse div {
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;
+}
