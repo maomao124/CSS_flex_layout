@@ -93,6 +93,26 @@ inherit	从父元素继承该属性的值
 order 属性用来设置项目在容器中出现的顺序，您可以通过具体的数值来定义项目在容器中的位置
 order: number;
 其中 number 就是项目在容器中的位置，默认值为 0。
+
+2) align-self
+align-self 属性允许您为某个项目设置不同于其它项目的对齐方式，该属性可以覆盖 align-items 属性的值。
+值	    描述
+auto	默认值，表示元素将继承其父容器的 align-items 属性值，如果没有父容器，则为“stretch”
+stretch	项目将被拉伸以适合容器
+center	项目位于容器的中央
+flex-start	项目位于容器的顶部
+flex-end	项目位于容器的底部
+baseline	项目与容器的基线对齐
+initial	将此属性设置为属性的默认值
+inherit	从父元素继承属性的值
+
+3) flex
+flex 属性是 flex-grow、flex-shrink 和 flex-basis 三个属性的简写
+flex: flex-grow flex-shrink flex-basis;
+参数说明如下：
+flex-grow：（必填参数）一个数字，用来设置项目相对于其他项目的增长量，默认值为 0；
+flex-shrink：（选填参数）一个数字，用来设置项目相对于其他项目的收缩量，默认值为 1；
+flex-basis：（选填参数）项目的长度，合法值为 auto（默认值，表示自动）、inherit（表示从父元素继承该属性的值） 或者以具体的值加 "%"、"px"、"em" 等单位的形式。
  */
 
 #main {
