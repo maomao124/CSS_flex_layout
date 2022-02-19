@@ -1,0 +1,32 @@
+/*
+  Project name(项目名称)：CSS_flex_layout 
+  File name(文件名): t7
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/19 
+  Time(创建时间)： 20:20
+  Version(版本): 1.0
+  Description(描述)： 无
+ */
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    border: 1px solid #CCC;
+}
+
+.flex div {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.flex div:nth-child(2) {
+    flex: 0;
+}
+
+.flex div:nth-child(4) {
+    flex: 1 1 auto;
+}
